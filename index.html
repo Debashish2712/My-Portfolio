@@ -66,8 +66,24 @@
             </div>
         </div>
     </div>
+    <script>
+  const text = "Hi, I'm Debashish Mahato\nMCA Candidate";
+  const target = document.getElementById("typewriter");
+  let index = 0;
+
+  function type() {
+    if (index < text.length) {
+      target.textContent += text.charAt(index);
+      index++;
+      setTimeout(type, 100);
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", type);
+</script>
 </body>
 </html>
+
 
 
 
