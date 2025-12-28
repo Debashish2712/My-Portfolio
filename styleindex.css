@@ -27,7 +27,7 @@ html,body {
   overflow: hidden;
   border-right: 2px solid darkslategray;
   width: 0;
-  animation: typing 4s steps(40, end) forwards, blink 0.7s step-end infinite;
+  animation: typing 7s steps(40, end) forwards, blink 0.7s step-end infinite;
 }
 
 /* Typing effect */
@@ -187,6 +187,7 @@ border-right: 2px solid black;
     font-size: 15px;
     color: rgb(101, 101, 101);
 }
+
 
 
 
