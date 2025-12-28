@@ -22,24 +22,25 @@ html,body {
 .intro-text {
   font-size: 2.5rem;
   font-weight: 700;
-  color: darkslategray; /* adjust to your theme */
-  opacity: 0;
-  transform: translateX(-100%);
-  animation: slideIn 1.5s ease-out forwards;
+  color: darkslategray;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid darkslategray;
+  width: 0;
+  animation: typing 4s steps(40, end) forwards, blink 0.7s step-end infinite;
 }
 
-/* Keyframes for sliding in */
-@keyframes slideIn {
-  from {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
+/* Typing effect */
+@keyframes typing {
+  from { width: 0; opacity: 1; }
+  to { width: 100%; opacity: 1; }
 }
 
+/* Blinking cursor */
+@keyframes blink {
+  0%, 100% { border-color: transparent; }
+  50% { border-color: darkslategray; }
+}
 #nav
 {
     position: fixed;
@@ -186,6 +187,7 @@ border-right: 2px solid black;
     font-size: 15px;
     color: rgb(101, 101, 101);
 }
+
 
 
 
