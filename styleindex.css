@@ -22,7 +22,7 @@ html,body {
 .intro-text {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #ffffff; /* adjust to your theme */
+  color: green; /* adjust to your theme */
   opacity: 0;
   transform: translateX(-100%);
   animation: slideIn 1.5s ease-out forwards;
@@ -186,6 +186,7 @@ border-right: 2px solid black;
     font-size: 15px;
     color: rgb(101, 101, 101);
 }
+
 
 
 
